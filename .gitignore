@@ -1,0 +1,29 @@
+.DS_Store
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Packaging and coverage products
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Reproducible simulation products
+outputs/
+
+# Private source material retained only in the local working copy
+/docs/to AT.docx
+/docs/PROJECT_DESCRIPTION.md

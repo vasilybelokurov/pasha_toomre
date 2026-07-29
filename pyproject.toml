@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pasha-toomre"
+version = "0.1.0"
+description = "Sun-intruder encounter simulations reconstructed from the Pasha-Toomre project documents"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.16",
+    "matplotlib>=3.10",
+]
+
+[project.scripts]
+pasha-toomre = "pasha_toomre.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
